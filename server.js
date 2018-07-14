@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
   })
 })
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    projectsPageMessage: 'Welcome to the list of projects'
+  })
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'This is a bad page'
