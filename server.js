@@ -29,9 +29,9 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs')
-})
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs')
+// })
 
 app.use(express.static(path.join(__dirname, '/public'))) // Using path.resolve(__dirname, '/public') does not work
 
